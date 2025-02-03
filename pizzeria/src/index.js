@@ -1,17 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+function Menu(){
+
+  return(
+    <div>
+      <h1>Menu</h1>
+    </div>
+  );
+
+}
+
+
+function Pizzas(){
+  return(
+    <ul>
+      <Pizza />
+    </ul>
+  );
+}
+
+function Pizza(){
+  return(
+    <li>
+      <h2>Pizza</h2>
+      <p>Ingredients: </p>
+    </li>
+  );
+}
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Menu />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
